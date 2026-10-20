@@ -1,0 +1,11 @@
+# Everything readable (photos, video, words, the secret answer) lives here and never leaves this laptop.
+private/
+
+# Local helper that names the original photos; it stays on this laptop too.
+scripts/prepare-media.sh
+
+# Editor and assistant settings
+.idea/
+.claude/
+
+.DS_Store

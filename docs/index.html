@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fdeef3">
+  <title>For you</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 28C8 21 4 16.5 4 11.5 4 7.9 6.8 5 10.3 5c2.3 0 4.3 1.2 5.7 3.1C17.4 6.2 19.4 5 21.7 5 25.2 5 28 7.9 28 11.5 28 16.5 24 21 16 28z' fill='none' stroke='%23e2457e' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="gate" class="gate">
+    <div class="gate__inner">
+      <svg class="envelope" viewBox="0 0 240 170" aria-hidden="true">
+        <rect class="envelope__body" x="10" y="20" width="220" height="140" rx="6"/>
+        <path class="envelope__flap" d="M10 26 L120 100 L230 26"/>
+        <path class="envelope__fold" d="M10 156 L96 92 M230 156 L144 92"/>
+        <g class="envelope__string">
+          <path class="string string--v" d="M120 14 V166"/>
+          <path class="string string--h" d="M4 90 H236"/>
+          <path class="string string--bow" d="M120 90 C96 64 84 78 92 90 C84 102 96 116 120 90 C144 64 156 78 148 90 C156 102 144 116 120 90"/>
+          <path class="string string--tails" d="M120 90 C114 104 106 118 100 130 M120 90 C126 104 134 118 142 128"/>
+        </g>
+      </svg>
+      <p class="gate__eyebrow">a website, again</p>
+      <form id="gate-form" class="gate__form" autocomplete="off">
+        <label for="gate-input" class="gate__q" id="gate-q">before you come in…</label>
+        <div class="gate__row">
+          <input id="gate-input" name="answer" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+          <button type="submit" class="gate__btn">open</button>
+        </div>
+      </form>
+      <p class="gate__msg" id="gate-msg" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <main id="story" class="story" hidden>
+    <svg id="thread" class="thread" aria-hidden="true"></svg>
+    <div id="sections"></div>
+  </main>
+
+  <canvas id="snow" class="snow" aria-hidden="true"></canvas>
+
+  <div id="lightbox" class="lightbox" hidden>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" alt="">
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button type="button" class="lightbox__close" aria-label="Close">×</button>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
