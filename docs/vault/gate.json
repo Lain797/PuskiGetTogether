@@ -2,9 +2,6 @@
   "question": "whose name is on your arm?",
   "iterations": 250000,
   "keys": [
-    "k-0.bin",
-    "k-1.bin",
-    "k-2.bin",
-    "k-3.bin"
+    "k-0.bin"
   ]
 }
